@@ -1,91 +1,253 @@
 /* ---- reset ---- */
 
 html {
-    box-sizing: border-box;
-  }
-  *, *:before, *:after {
-    box-sizing: inherit;
-  }
-  
-  body {
-    margin: 0;
-    padding: 0;
-  }
-  
-  
-  /* ---- typography ---- */
-  
-  body {
-    color: #111;
-    font-family: Helvetica, Arial, sans-serif;
-    font-size: 16px;
-    line-height: 147%;
-  }
-  
-  h1 {}
-  
-  h2 {}
-  
-  h3 {}
-  
-  p {
-    margin: 0;
-  }
-  
-  
-  
-  /* ---- layout ---- */
-  
-  #site-header {
-    padding: 30px 0;
-    color: white;
-    background: #111;
-  }
-  
-  #site-footer {
-    color: white;
-    padding: 60px 0;
-    background: #111;
-  }
-  
-  #site-main {
-    margin-bottom: 60px;
-  }
-  
-  .container {
-    margin: 0 20px;
-  }
-  
-  .section {
-    margin-bottom: 20px;
-    padding-top: 20px;
-  }
-  
-  @media (min-width: 768px) {
-    .container {
-      max-width: 728px;
-      margin: 0 auto;
-    }
-  }
-  
-  
-  
-  
-  /* ---- components ---- */
-  
-  .button {
-    width: 100%;
-    background-color: blue;
-    color: #fff;
-    border: 1px solid #fff
-  }
-  
-  .button-alt {
-    color: blue;
-    background-color: #fff;
-  }
-  
-  /* ---- section ---- */
-  
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 
+body {
+  margin: 0;
+  padding: 0px;
+  height: 100%;
+}
+
+ul, li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+
+a {
+  text-decoration: none;
+}
+
+
+/* ---- typography ---- */
+
+body {
+  color:black;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 147%;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {}
+
+h3 {}
+
+p {
+  margin: 0;
+}
+
+a {
+ color: white;
+}
+
+
+/* ---- layout ---- */
+
+#root {
+  display: flex;
+  flex-direction: column;
+  width:100%;
+  background-color: white;
+  min-height: 100vh;
+  background-color: black;
+  color:white;
+  background-image: url('./background-space.jpg');
+}
+#site-header {
+  display:flex;
+  flex-direction: row;
+  justify-content: left;
+  width: 100%;
+  background:black;
+}
+
+#site-footer {
+  display:flex;
+  flex-direction: row;
+  justify-content: right;
+  color: white;
+  padding: 10px;
+  background:black;
+}
+
+#site-main {
+}
+
+.container {
+  margin: 0 20px;
+}
+
+.section {
+  margin-bottom: 20px;
+  padding-top: 20px;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 728px;
+    margin: 0 auto;
+  }
+}
+
+
+
+
+/* ---- components ---- */
+
+.button {
+  width: 100%;
+  background-color: blue;
+  color: #fff;
+  border: 1px solid #fff
+}
+
+.button-alt {
+  color: blue;
+  background-color: #fff;
+}
+
+/* ---- section ---- */
+
+nav {
+  min-width: 500px;
+  margin-left:5%;
+
+}
+
+nav ul{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   
+}
+
+
+
+li:first-child {
+  max-width: 150px;
+  margin: 0px;  
+} 
+li:nth-child(2) {
+  
+  margin-left: 30px;  
+} 
+img{
+  width:140%;
+}
+
+
+.landing-page{
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-image: url(./landing-back.jpg);
+  background-repeat: no-repeat;
+  background-size:cover;
+}
+
+.landing-wrapper{
+  padding-top: 15px;
+  max-width:1140px;
+  max-height:100vh;
+  margin: auto;
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 50vh 50vh;
+  grid-column-gap: 10px;
+  grid-row-gap: 15px;
+  grid-template-areas:
+    "a b"
+    "c d";
+
+}
+.a {
+  
+  background-image: url("./grid-1.jpg");
+  background-size:cover;
+}
+.b{
+  background-image: url("./grid-2.jpg");
+  background-size:cover;
+
+}
+
+.c{
+  grid-area:c;
+  background-image: url("./grid-3.jpg");
+  background-size:cover;
+
+}
+.d {
+  grid-area:d;
+  background-image: url("./grid-4.jpg");
+  background-size:cover;
+
+}
+
+.launch-card {
+  max-width:1040px;
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  background-color: white;
+  margin: 20px;
+  padding: 20px;
+  color:black;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right:auto;
+  box-shadow: 1px -1px 5px red;
+
+}
+
+
+
+
+
+
+
+
+
+
+.launch-card img{
+  width: 100%;
+}
+
+
+.card{
+  max-height: 250px;
+  display:grid;
+  grid-template-columns: 10% 17% 45% 25%;
+  grid-template-areas: "first second third fourth";
+  grid-column-gap: 20px;
+  overflow: hidden;
+
+}
+.second{
+  align-self: center;
+}
+
+.fourth{
+  align-self: center;
+}
+.card .mission-patch{
+width:100%;
+
+}
+footer > ul{
+  display: flex;
+  justify-content: space-between;
+}
+
