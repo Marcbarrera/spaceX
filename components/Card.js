@@ -8,6 +8,10 @@ Card.prototype.generate = function() {
   if(this.launch.links.flickr_images.length === 0) {
     this.launch.links.flickr_images = ['https://media.wired.com/photos/5cd5df1f2948ca2e63b090f0/4:3/w_2400,c_limit/01_SPoW_051119.jpg']
   }
+  if(!this.launch.links.mission_patch) {
+    
+    this.launch.links.mission_patch = './commingsoon.png'
+  }
 
   if(!this.launch.details) {
     this.launch.details = 'No description...'

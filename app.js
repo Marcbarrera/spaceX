@@ -6,8 +6,9 @@ function main(){
   var navbarInstance = null;
   var footerInstance = null;
   var rootElement = document.querySelector('#root');
+  var image = '<img class="home-button" src="./spacex-logo.jpg">';
   var links = [
-    {name: '<img src="./spacex-logo.jpg">',
+    {name: image,
     url: '/'}
     ,
     {name: 'launches API information',
@@ -19,10 +20,18 @@ function main(){
   generateFooter();
   addListenersToNavbar();
   activateRouter();
+  backHome();
 
   function generateLayout() {
     layoutInstance = new Layout(rootElement);
     layoutInstance.generate();
+  }
+
+  function backHome() {
+    var homeButton = document.querySelector('.home-button');
+    homeButton.addEventListener('click', ()=>{
+      location.reload();
+    })
   }
 
   function generateNavbar() {
