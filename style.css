@@ -35,7 +35,6 @@ body {
 }
 
 h1 {
-  text-align: center;
 }
 
 h2 {}
@@ -158,6 +157,15 @@ img{
   background-image: url(./landing-back.jpg);
   background-repeat: no-repeat;
   background-size:cover;
+  
+}
+.landing-page h1{
+  max-width:600px;
+line-height: 150%;
+  font-size: 50px;
+  margin-left:-650px;
+  margin-top:150px;
+  text-shadow: 1px 1px 1px black;
 }
 
 .pics-wrapper{
@@ -220,12 +228,6 @@ img{
   font-size: 40px;
 
 }
-
-
-
-
-
-
 
 
 
@@ -344,9 +346,19 @@ padding-bottom: 20px;
 }
 
 .ships-name h2:nth-child(2){
+  margin-left:-25px;}
+
+.ships-name h2:nth-child(3){
   margin-left:-25px;
--webkit-animation: pulsate-fwd 2s ease-in-out 0.5s infinite both;
-  animation: pulsate-fwd 2s ease-in-out 0.5s infinite both;
+}
+
+.ship-section-title{
+  padding-top: 25px;
+  font-size:55px;
+  text-shadow: 1px 1px orange;
+
+  -webkit-animation: pulsate-fwd 2s ease-in-out 1s infinite both;
+  animation: pulsate-fwd 2s ease-in-out 1s infinite both;
 }
 
 @-webkit-keyframes pulsate-fwd {
@@ -378,8 +390,8 @@ padding-bottom: 20px;
 }
 }
 .classe {
--webkit-animation: pulsate-fwd 0.5s ease-in-out 3s infinite both;
- animation: pulsate-fwd 0.5s ease-in-out 3s infinite both;
+-webkit-animation: pulsate-fwd 3s ease-in-out 1s infinite both;
+ animation: pulsate-fwd 3s ease-in-out 1s infinite both;
 }@-webkit-keyframes pulsate-fwd {
 0% {
 -webkit-transform: scale(1);
@@ -407,15 +419,4 @@ padding-bottom: 20px;
 -webkit-transform: scale(1);
         transform: scale(1);
 }
-}
-
-.ships-name h2:nth-child(3){
-  margin-left:-25px;
-}
-
-.ship-section-title{
-  padding-top: 25px;
-  font-size:55px;
-  text-shadow: 1px 1px orange;
-
 }

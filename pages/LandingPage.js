@@ -9,7 +9,7 @@ LandingPage.prototype.generate = function() {
   this.elements = `
     <section>
       <header class="landing-page">
-        <h1>This is the best SPACEX page you can find</h1>
+        <h1>This is the best SPACEX page you could find</h1>
       </header>
       <section class="ships-container">
       <h2 class="ship-section-title">The spaceX ships</h2>
