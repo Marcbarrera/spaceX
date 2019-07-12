@@ -13,7 +13,7 @@ LaunchesPage.prototype.generate = async function() {
   await this.connectToAPI();
   this.elements = `
     <header>
-      <h2>Welcome to launches</h2>
+      <h2 class="launches-title">Welcome to launches</h2>
     </header>
     <section class="cards-container">
   `;

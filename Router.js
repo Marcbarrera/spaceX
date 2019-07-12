@@ -13,7 +13,7 @@ Router.prototype.buildDom = function(url, parentElement) {
       this.generateMoviesPage(parentElement);
       break;
     case '/launches':
-      this.generateLaunchesPage(parentElement); 
+      this.generateLaunchesPage(parentElement);
       break;
     default:
       this.generateLandingPage(parentElement);

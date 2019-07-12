@@ -7,11 +7,12 @@ function Footer(parentElement) {
 
 Footer.prototype.generate = function() {
   this.elements = `
-    <ul>
-      <li><a href="#">Instagram</a></li>
-      <li><a href="#">Linkedin</a></li>
-      <li><a href="#">Twiter</a></li>
-    </ul>
+    <ul class="footerlinks">
+      <li><a href="#"><img src="https://img.icons8.com/color/96/000000/facebook-new.png"></a></li>
+      <li><a href="#"><img src="https://img.icons8.com/color/96/000000/instagram-new.png"></a></li>
+      <li><a href="#"><img src="https://img.icons8.com/color/96/000000/twitter.png"></a></li>
+      <li><a href="#"><img src="https://img.icons8.com/color/96/000000/flickr.png"></a></li>
+      </ul>
   `;
 
   this.render();
