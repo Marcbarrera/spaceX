@@ -160,7 +160,7 @@ img{
   background-size:cover;
 }
 
-.landing-wrapper{
+.pics-wrapper{
   padding-top: 15px;
   max-width:1140px;
   max-height:100vh;
@@ -287,7 +287,7 @@ width:50%;
 
   max-width: 300px;
   margin:auto;
-  padding-top: 300px;
+  padding-top: 200px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -319,3 +319,103 @@ margin-top:30vh;
 margin-left:400px;
 margin-top:400px;
 } */
+
+.ships-container {
+  background-color:black;
+  min-height:110vh;
+  width:100%;
+  display:flex;
+  flex-direction: column;
+align-items: center;
+padding-bottom: 20px;
+}
+
+.ships-container img{
+  width:90%;
+
+}
+
+.ships-container .ships-name{
+  display: flex;
+  flex-direction:row;
+  min-width:525px;
+    justify-content: space-between;
+    margin-left:-35px;
+}
+
+.ships-name h2:nth-child(2){
+  margin-left:-25px;
+-webkit-animation: pulsate-fwd 2s ease-in-out 0.5s infinite both;
+  animation: pulsate-fwd 2s ease-in-out 0.5s infinite both;
+}
+
+@-webkit-keyframes pulsate-fwd {
+0% {
+ -webkit-transform: scale(1);
+         transform: scale(1);
+}
+50% {
+ -webkit-transform: scale(1.1);
+         transform: scale(1.1);
+}
+100% {
+ -webkit-transform: scale(1);
+         transform: scale(1);
+}
+}
+@keyframes pulsate-fwd {
+0% {
+ -webkit-transform: scale(1);
+         transform: scale(1);
+}
+50% {
+ -webkit-transform: scale(1.1);
+         transform: scale(1.1);
+}
+100% {
+ -webkit-transform: scale(1);
+         transform: scale(1);
+}
+}
+.classe {
+-webkit-animation: pulsate-fwd 0.5s ease-in-out 3s infinite both;
+ animation: pulsate-fwd 0.5s ease-in-out 3s infinite both;
+}@-webkit-keyframes pulsate-fwd {
+0% {
+-webkit-transform: scale(1);
+        transform: scale(1);
+}
+50% {
+-webkit-transform: scale(1.1);
+        transform: scale(1.1);
+}
+100% {
+-webkit-transform: scale(1);
+        transform: scale(1);
+}
+}
+@keyframes pulsate-fwd {
+0% {
+-webkit-transform: scale(1);
+        transform: scale(1);
+}
+50% {
+-webkit-transform: scale(1.1);
+        transform: scale(1.1);
+}
+100% {
+-webkit-transform: scale(1);
+        transform: scale(1);
+}
+}
+
+.ships-name h2:nth-child(3){
+  margin-left:-25px;
+}
+
+.ship-section-title{
+  padding-top: 25px;
+  font-size:55px;
+  text-shadow: 1px 1px orange;
+
+}

@@ -11,7 +11,17 @@ LandingPage.prototype.generate = function() {
       <header class="landing-page">
         <h1>This is the best SPACEX page you can find</h1>
       </header>
-      <main class="landing-wrapper">
+      <section class="ships-container">
+      <h2 class="ship-section-title">The spaceX ships</h2>
+       <img src="./spacex-ships.png">
+       <article class="ships-name">   
+         <h2>falcon 1</h2>
+         <h2>falcon 9</h2>  
+         <h2>falcon Heavy</h2>
+         <h2>BFR</h2>
+       </article>
+      </section>
+      <main class="pics-wrapper">
         <div class="a"></div>
         <div class="b"></div>
         <div class="c"></div>

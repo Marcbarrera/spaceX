@@ -10,10 +10,7 @@ function main(){
     {name: '<img src="./spacex-logo.jpg">',
     url: '/'}
     ,
-    {name: 'ships',
-    url: '/ships'}
-    ,
-    {name: 'launches',
+    {name: 'launches API information',
     url: '/launches'}
   ];
 
