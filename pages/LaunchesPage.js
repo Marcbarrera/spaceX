@@ -1,13 +1,15 @@
 'use strict';
 
-function LaunchesPage(parentElement) {
+class LaunchesPage{
+constructor(parentElement) {
   this.parentElement = parentElement;
   this.elements      = null;
   this.launches        = null;
   this.loading       = null;
 }
 
-LaunchesPage.prototype.generate = async function() {
+async generate() {
+
   this.generateLoading();
 
   await this.connectToAPI();
@@ -18,7 +20,7 @@ LaunchesPage.prototype.generate = async function() {
     <section class="cards-container">
   `;
   this.launches.forEach((launch) => {
-    var launchCard = new Card(launch);
+    const launchCard = new Card(launch);
     this.elements += launchCard.generate();
   })
   this.elements += '</section>';
@@ -26,15 +28,34 @@ LaunchesPage.prototype.generate = async function() {
   this.render();
 }
 
-LaunchesPage.prototype.render = function() {
-  this.parentElement.innerHTML = this.elements;
+render (){
+    this.parentElement.innerHTML = this.elements;
 }
 
-LaunchesPage.prototype.connectToAPI = async function() {
+async connectToAPI () {
   this.launches = await LaunchesServiceInstance.getAllLaunches();
 }
 
-LaunchesPage.prototype.generateLoading = function() {
-  this.loading = new Loading(this.parentElement);
-  this.loading.generate();
+generateLoading (){
+    this.loading = new Loading(this.parentElement);
+    this.loading.generate();
+  }
 }
+
+
+
+// LaunchesPage.prototype.render = function() {
+//   this.parentElement.innerHTML = this.elements;
+// }
+
+// LaunchesPage.prototype.connectToAPI = async function() {
+//   this.launches = await LaunchesServiceInstance.getAllLaunches();
+// }
+
+// LaunchesPage.prototype.generateLoading = function() {
+//   this.loading = new Loading(this.parentElement);
+//   this.loading.generate();
+// }
+
+
+

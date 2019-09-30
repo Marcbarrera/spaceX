@@ -1,13 +1,13 @@
 'use strict';
 
 function main(){
-  var ENTRY_POINT = '/';
-  var layoutInstance = null;
-  var navbarInstance = null;
-  var footerInstance = null;
-  var rootElement = document.querySelector('#root');
-  var image = '<img class="home-button" src="./spacex-logo.jpg">';
-  var links = [
+  const ENTRY_POINT = '/';
+  let layoutInstance = null;
+  let navbarInstance = null;
+  let footerInstance = null;
+  let rootElement = document.querySelector('#root');
+  let image = '<img class="home-button" src="./spacex-logo.jpg">';
+  let links = [
     {name: image,
     url: '/'}
     ,
@@ -28,7 +28,7 @@ function main(){
   }
 
   function backHome() {
-    var homeButton = document.querySelector('.home-button');
+    const homeButton = document.querySelector('.home-button');
     homeButton.addEventListener('click', ()=>{
       location.reload();
     })
@@ -49,14 +49,14 @@ function main(){
   }
 
   function addListenersToNavbar() {
-    var anchors = document.querySelectorAll('nav a');
+    const anchors = document.querySelectorAll('nav a');
     anchors.forEach(function(anchor) {
       anchor.addEventListener('click', changePage);
     })
   }
 
   function changePage(event) {
-    var url = event.target.attributes.url.value;
+    const url = event.target.attributes.url.value;
     routerInstance.buildDom(url, layoutInstance.main);
   }
 };

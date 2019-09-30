@@ -5,10 +5,10 @@ function LaunchesService() {
 }
 
 LaunchesService.prototype.getAllLaunches = async function() {
-  var response = await fetch(`${this.baseUrl}`);
-  var data = await response.json();
+  const response = await fetch(`${this.baseUrl}`);
+  const data = await response.json();
   console.log(data);
   return data;
 }
 
-var LaunchesServiceInstance = new LaunchesService();
+const LaunchesServiceInstance = new LaunchesService();

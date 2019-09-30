@@ -1,24 +1,51 @@
 'use strict';
 
-function Router() {
+
+class Router {
+  constructor (){
   this.page = null;
+  }
+
+  buildDom (url, parentElement) {
+    switch (url) {
+      case '/':
+        this.generateLandingPage(parentElement);
+        break;
+      // case '/movies':
+      //   this.generateMoviesPage(parentElement);
+      //   break;
+      case '/launches':
+        this.generateLaunchesPage(parentElement);
+        break;
+      default:
+        this.generateLandingPage(parentElement);
+    }
+  }
+  
 }
 
-Router.prototype.buildDom = function(url, parentElement) {
-  switch (url) {
-    case '/':
-      this.generateLandingPage(parentElement);
-      break;
-    // case '/movies':
-    //   this.generateMoviesPage(parentElement);
-    //   break;
-    case '/launches':
-      this.generateLaunchesPage(parentElement);
-      break;
-    default:
-      this.generateLandingPage(parentElement);
-  }
-}
+
+
+
+// function Router() {
+//   this.page = null;
+// }
+
+// Router.prototype.buildDom = function(url, parentElement) {
+//   switch (url) {
+//     case '/':
+//       this.generateLandingPage(parentElement);
+//       break;
+//     // case '/movies':
+//     //   this.generateMoviesPage(parentElement);
+//     //   break;
+//     case '/launches':
+//       this.generateLaunchesPage(parentElement);
+//       break;
+//     default:
+//       this.generateLandingPage(parentElement);
+//   }
+// }
 
 Router.prototype.generateLandingPage = function(parentElement) {
   this.page = new LandingPage(parentElement);
@@ -36,4 +63,4 @@ Router.prototype.generateLaunchesPage = function(parentElement) {
 }
 
 
-var routerInstance = new Router();
+const routerInstance = new Router();

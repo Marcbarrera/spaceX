@@ -208,7 +208,7 @@ line-height: 150%;
 }
 
 .launch-card {
-  max-width:1040px;
+  max-width:1240px;
   display: flex;
   flex-direction: row;
   justify-content: left;
@@ -238,11 +238,11 @@ line-height: 150%;
 
 
 .card{
-  max-height: 270px;
+  max-height: 300px;
   display:grid;
-  grid-template-columns: 10% 17% 45% 25%;
+  grid-template-columns: 15% 17% 40% 25%;
   grid-template-areas: "first second third fourth";
-  grid-column-gap: 20px;
+  grid-column-gap: 25px;
   overflow: hidden;
 
 }
