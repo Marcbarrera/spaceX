@@ -60,7 +60,7 @@ a {
   min-height: 100vh;
   background-color: black;
   color:white;
-  background-image: url('./background-space.jpg');
+  background-image: url('./images/background-space.jpg');
   background-attachment: fixed;
 
 }
@@ -154,7 +154,7 @@ img{
   min-height: 100vh;
   display: flex;
   justify-content: center;
-  background-image: url(./landing-back.jpg);
+  background-image: url(./images/landing-back.jpg);
   background-repeat: no-repeat;
   background-size:cover;
   
@@ -185,24 +185,24 @@ line-height: 150%;
 }
 .a {
   
-  background-image: url("./grid-1.jpg");
+  background-image: url("./images/grid-1.jpg");
   background-size:cover;
 }
 .b{
-  background-image: url("./grid-2.jpg");
+  background-image: url("./images/grid-2.jpg");
   background-size:cover;
 
 }
 
 .c{
   grid-area:c;
-  background-image: url("./grid-3.jpg");
+  background-image: url("./images/grid-3.jpg");
   background-size:cover;
 
 }
 .d {
   grid-area:d;
-  background-image: url("./grid-4.jpg");
+  background-image: url("./images/grid-4.jpg");
   background-size:cover;
 
 }

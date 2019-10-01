@@ -13,7 +13,7 @@ LandingPage.prototype.generate = function() {
       </header>
       <section class="ships-container">
       <h2 class="ship-section-title">The spaceX ships</h2>
-       <img src="./spacex-ships.png">
+       <img src="./images/spacex-ships.png">
        <article class="ships-name">   
          <h2>falcon 1</h2>
          <h2>falcon 9</h2>  

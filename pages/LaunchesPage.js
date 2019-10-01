@@ -4,7 +4,7 @@ class LaunchesPage{
 constructor(parentElement) {
   this.parentElement = parentElement;
   this.elements      = null;
-  this.launches        = null;
+  this.launches      = null;
   this.loading       = null;
 }
 
@@ -41,21 +41,3 @@ generateLoading (){
     this.loading.generate();
   }
 }
-
-
-
-// LaunchesPage.prototype.render = function() {
-//   this.parentElement.innerHTML = this.elements;
-// }
-
-// LaunchesPage.prototype.connectToAPI = async function() {
-//   this.launches = await LaunchesServiceInstance.getAllLaunches();
-// }
-
-// LaunchesPage.prototype.generateLoading = function() {
-//   this.loading = new Loading(this.parentElement);
-//   this.loading.generate();
-// }
-
-
-

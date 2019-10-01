@@ -11,7 +11,7 @@ class Card {
     }
     if(!this.launch.links.mission_patch) {
       
-      this.launch.links.mission_patch = './commingsoon.png'
+      this.launch.links.mission_patch = './images/commingsoon.png'
     }
   
     if(!this.launch.details) {

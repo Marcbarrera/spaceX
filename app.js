@@ -6,7 +6,7 @@ function main(){
   let navbarInstance = null;
   let footerInstance = null;
   let rootElement = document.querySelector('#root');
-  let image = '<img class="home-button" src="./spacex-logo.jpg">';
+  let image = '<img class="home-button" src="./images/spacex-logo.jpg">';
   let links = [
     {name: image,
     url: '/'}
